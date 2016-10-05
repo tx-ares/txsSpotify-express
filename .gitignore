@@ -1,6 +1,4 @@
-node_modules
-app/**/*.js
-app/**/*.js.map
+
 typings
 npm-debug.log
 public/ng2
@@ -8,3 +6,4 @@ public/ng2
 .idea
 *.iml
 *.ipr
+IMPORTANTSECRET
