@@ -1,23 +1,21 @@
-import { Component } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import {Component} from '@angular/core';
+import {ROUTER_DIRECTIVES} from '@angular/router';
+import {NavbarComponent} from './components/navbar/navbar.component/';
+import {SearchComponent} from './components/search/search.component/';
+import {AboutComponent} from './components/about/about.component/';
+import {AlbumComponent} from './components/album/album.component'
+import {ArtistComponent} from './components/artist/artist.component'
+import {HTTP_PROVIDERS} from '@angular/http'
+import {SpotifyService} from './services/spotify.service'
 
 @Component({
-    directives: [ROUTER_DIRECTIVES],
+    moduleId: module.id,
     selector: 'my-app',
-    styles: [`h1 {
-	color: white;
-	background: darkgray;
-	padding: 20px;
-}
-`],
-    template: `
-<h1>My First {{name}} app</h1>
-<router-outlet></router-outlet>
-
-<a [routerLink]="['/']">Home</a> | <a [routerLink]="['/about/', { id: 2 }]">About</a>`,
+    templateUrl: 'app.component.html',
+    directives:[ROUTER_DIRECTIVES, NavbarComponent],
+    entryComponents:[SearchComponent, AboutComponent], // Syntax change from precompile to entryComponents . RC4 => RC5
+    providers: [HTTP_PROVIDERS, SpotifyService] //Spotify calls will be made here so it must be added through providers.
 })
-export class AppComponent {
-    name: string = "Angular 2 on Express";
 
-    constructor() {}
-}
+
+export class AppComponent { }

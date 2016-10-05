@@ -1,25 +1,15 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpModule, JsonpModule } from '@angular/http';
-
-
 import { AppComponent }  from './app.component';
-import { AboutComponent } from "./components/about/about.component";
-import { routing } from "./routes";
-import { HomeComponent } from "./components/home/home.component";
+import { FormsModule } from '@angular/forms';
+// Testing import providers for router.
+import {appRouterProviders} from './app.routes'
+
 
 @NgModule({
-    imports: [
-        BrowserModule,
-        HttpModule,
-        JsonpModule,
-        routing
-    ],
-    declarations: [
-        AppComponent,
-        AboutComponent,
-        HomeComponent
-    ],
-    bootstrap: [ AppComponent ]
+  imports: [BrowserModule, FormsModule] ,
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
+  providers: [appRouterProviders] // Importing providers fixed RC4 -> RC5 migration bugs.
 })
 export class AppModule { }

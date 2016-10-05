@@ -1,29 +1,55 @@
-<html>
+<!-- <html>
   <head>
     <title>Angular 2 QuickStart</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> -->
+
+    
+    <!-- Development mod -->
+    <!-- <script src="js/systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err) { console.error(err); });
+    </script>
+    
+  </head> -->
+
+  <!-- 3. Display the application -->
+  <!-- <body>
+    <my-app>Loading...</my-app>
+
+    
+  </body>
+</html> -->
+
+<html>
+  <head>
+    <title>txsSpotify</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
 
     <!-- Polyfill(s) for older browsers -->
     <script src="js/vendor/shim.min.js"></script>
     <script src="js/vendor/zone.min.js"></script>
     <script src="js/vendor/Reflect.js"></script>
     <script src="js/vendor/system.js"></script>
-    <!--
-    Development mod
+
+
     <script src="js/systemjs.config.js"></script>
     <script>
-      System.import('app').catch(function(err) { console.error(err); });
+      System.import('app').catch(function(err){ console.error(err); });
     </script>
-    -->
-  </head>
-
-  <!-- 3. Display the application -->
-  <body>
-    <my-app>Loading...</my-app>
 
     <!-- Production mod -->
-    <script src="js/bundle.min.js"></script>
+    <!-- <script src="js/bundle.min.js"></script> -->
+  </head>
+
+  <body>
+    <my-app>Loading...</my-app>
+    <base href="/">
+
   </body>
 </html>
