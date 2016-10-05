@@ -1,3 +1,13 @@
+![Picture](https://github.com/TxsAdamWest/txsSpotify-express/blob/master/images/albums.png)
+
+![Picture](https://github.com/TxsAdamWest/txsSpotify-express/blob/master/images/search.png)
+
+![Picture](https://github.com/TxsAdamWest/txsSpotify-express/blob/master/images/tracks.png)
+
+![Picture](https://github.com/TxsAdamWest/txsSpotify-express/blob/master/images/about.png)
+
+
+
 ## Angular2 Express slim starter
 ### Heroku ready wih SystemJS builder
 
@@ -36,3 +46,4 @@ Comment out
 <!-- Production mod -->
 <script src="js/bundle.min.js"></script>
 ```
+
