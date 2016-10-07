@@ -1,6 +1,9 @@
 {
   "name": "angular2-express-slim",
   "version": "0.0.0",
+  "engines": {
+    "node": "^6.6.0"
+  },
   "private": true,
   "scripts": {
     "start": "concurrently \"tsc -w\" \"node ./bin/www\" ",
