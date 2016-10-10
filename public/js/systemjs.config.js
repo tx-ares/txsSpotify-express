@@ -1,4 +1,4 @@
-var isPublic = typeof window != "undefined";
+var isPublic = 1;
 
 /**
  * System configuration for Angular 2 samples
