@@ -16,7 +16,8 @@ if (app.get('env') !== 'production') {
 }
 
   // Adding do browser can GET bower files
-  
+    app.use(express.static(__dirname + "/node_modules"));
+
 
 // uncomment after placing your favicon in /public
 // app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
