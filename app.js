@@ -15,9 +15,9 @@ if (app.get('env') !== 'production') {
   app.use(express.static(__dirname + "/node_modules"));
 }
 
-  // Added to override the production check.  Hacky I know, but it works for now.
+  // SEE MAIN.TS NOTE 1a Added to override the production check.  Hacky I know, but it works for now.
   app.use(express.static(__dirname + "/node_modules"));
-
+  // END NOTE
 
 // uncomment after placing your favicon in /public
 // app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));

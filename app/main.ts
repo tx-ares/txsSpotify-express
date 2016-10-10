@@ -2,10 +2,10 @@
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {AppModule} from './app.module';
 
+// NOTE 1a
 import {enableProdMode} from '@angular/core';
-
-
-enableProdMode();
+enableProdMode(); // This is supposed to allow app access to /node_modules folder.  Not working yet. 
+// END 1a
 
 platformBrowserDynamic().bootstrapModule(AppModule);
 
