@@ -14,7 +14,6 @@
     "bundle": "node bin/bundler.js",
     "bundle:prod": "node bin/bundler.js --prod",
     "ngc": "ngc -p .",
-    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -23,7 +22,6 @@
     "express": "^4.13.4",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
-    "bower": "^1.7.9"
   },
   "devDependencies": {
     "@angular/common": "2.0.0-rc.5",
