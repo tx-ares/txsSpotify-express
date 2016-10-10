@@ -15,8 +15,8 @@ if (app.get('env') !== 'production') {
   app.use(express.static(__dirname + "/node_modules"));
 }
 
-  // Adding do browser can GET bower files
-    app.use(express.static(__dirname + "/node_modules"));
+  // Added to override the production check.  Hacky I know, but it works for now.
+  app.use(express.static(__dirname + "/node_modules"));
 
 
 // uncomment after placing your favicon in /public
