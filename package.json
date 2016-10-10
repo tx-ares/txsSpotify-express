@@ -7,14 +7,14 @@
   },
   "private": true,
   "scripts": {
-    "prestart": "npm install",
     "start": "concurrently \"tsc -w\" \"node ./bin/www\" ",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings install",
     "bundle": "node bin/bundler.js",
     "bundle:prod": "node bin/bundler.js --prod",
-    "ngc": "ngc -p ."
+    "ngc": "ngc -p .",
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -22,7 +22,8 @@
     "debug": "~2.2.0",
     "express": "^4.13.4",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "bower": "^1.7.9"
   },
   "devDependencies": {
     "@angular/common": "2.0.0-rc.5",
